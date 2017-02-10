@@ -19,7 +19,7 @@ export default function reducer( state = initialState, action ) {
   return state
 }
 
-export function login () {
+export function login (user) {
   return { type: LOGIN, user}
 }
 

@@ -11,16 +11,21 @@ class Shop extends Component {
     this.props.dispatch( addProduct(product))
   }
 
-  render(){
-    const products = getProducts().map( product => (
-      <Product
-        addToCart={ this.addToCart.bind( this, product )}
-        key={ product.name }
-        name={ product.name }
-        price={ product.price }
-      />
+    render(){
+      const products = getProducts().map( product => (
+        <Product
+          addToCart={ this.addToCart.bind( this, product )}
+          key={ product.name }
+          name={ product.name }
+          price={ product.price }
+        />
+      ) )
 
-  ) )
+      return (
+        <div className="shop-wrapper">
+          { products }
+        </div>
+      )
 
 
   }

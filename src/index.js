@@ -8,7 +8,6 @@ import Login from './components/Login/Login'
 import Shop from './components/Shop/Shop'
 import store from './store'
 
-const reactNode = document.getElementById('root')
 
 ReactDOM.render(
   <Provider store={ store }>
@@ -19,4 +18,4 @@ ReactDOM.render(
       </Route>
     </Router>
   </Provider>
-  , reactNode )
+  , document.getElementById('react-node') )

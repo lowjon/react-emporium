@@ -37,7 +37,7 @@ class Login extends Component {
             onChange={ this.handleChange.bind( this, 'username')}
             placeholder="Username"
             type="text"
-            value={ this.state.email }
+            value={ this.state.username }
           />
           <input
             onChange={ this.handleChange.bind( this, 'email')}
